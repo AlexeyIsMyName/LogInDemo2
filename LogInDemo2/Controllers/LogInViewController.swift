@@ -12,8 +12,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    private let userName = "Alex"
-    private let password = "PassW"
+    private let user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +22,11 @@ class LogInViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userName
+        welcomeVC.userName = user.name
     }
     
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != userName || passwordTextField.text != password {
+        if userNameTextField.text != user.name || passwordTextField.text != user.password {
             showAlert(title: "Invalid login or password",
                       message: "please enter correct login and password") { _ in
                 self.passwordTextField.text = nil
@@ -43,10 +42,10 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
-        var message = "Your name is \(userName)"
+        var message = "Your name is \(user.name)"
         
         if sender.tag == 1 {
-            message = "Your password is \(password)"
+            message = "Your password is \(user.password)"
         }
         
         showAlert(title: "Ooops!", message: message)

@@ -14,6 +14,7 @@
 		E7FC162028898EA7002A838F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC161F28898EA7002A838F /* WelcomeViewController.swift */; };
 		E7FC162328898F5C002A838F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FC162128898F5C002A838F /* Main.storyboard */; };
 		E7FC162628898FD9002A838F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FC162428898FD9002A838F /* LaunchScreen.storyboard */; };
+		E7FC162D2889942E002A838F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC162C2889942E002A838F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E7FC161F28898EA7002A838F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E7FC162228898F5C002A838F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LogInDemo2/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7FC162528898FD9002A838F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LogInDemo2/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E7FC162C2889942E002A838F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		E7FC16272889908C002A838F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7FC162C2889942E002A838F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				E7FC161E28898EA1002A838F /* LogInViewController.swift in Sources */,
 				E7FC162028898EA7002A838F /* WelcomeViewController.swift in Sources */,
 				E7FC160928898DB0002A838F /* AppDelegate.swift in Sources */,
+				E7FC162D2889942E002A838F /* User.swift in Sources */,
 				E7FC160B28898DB0002A838F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
