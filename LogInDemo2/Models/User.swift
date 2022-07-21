@@ -20,12 +20,12 @@ struct Person {
 
 struct Job {
     let name: String
-    let description: String
+    let info: String
 }
 
 struct Hobby {
     let name: String
-    let description: String
+    let info: String
 }
 
 extension User {
@@ -35,8 +35,8 @@ extension User {
              person: Person(
                 name: "Aleksey",
                 surname: "Suslov",
-                job: Job(name: "iOS Developer", description: "Designing and building applications for mobile devices running Apple's iOS operating software."),
-                hobby: Hobby(name: "Bicycling", description: "Cycling provides a variety of health benefits and reduces the risk of cancers, heart disease, and diabetes that are prevalent in sedentary lifestyles.")
+                job: Job(name: "iOS Developer", info: "Designing and building applications for mobile devices running Apple's iOS operating software."),
+                hobby: Hobby(name: "Bicycling", info: "Cycling provides a variety of health benefits and reduces the risk of cancers, heart disease, and diabetes that are prevalent in sedentary lifestyles.")
              ))
     }
 }

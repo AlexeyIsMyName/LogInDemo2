@@ -9,21 +9,15 @@ import UIKit
 
 class JobViewController: UIViewController {
 
+    @IBOutlet weak var jobNameLabel: UILabel!
+    @IBOutlet weak var jobInfoLabel: UILabel!
+    
+    var job: Job!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        jobNameLabel.text = job.name
+        jobInfoLabel.text = job.info
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

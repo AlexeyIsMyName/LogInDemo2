@@ -140,7 +140,7 @@
         <!--Job-->
         <scene sceneID="RXy-Zq-R4G">
             <objects>
-                <viewController id="Ghv-Kg-zhj" sceneMemberID="viewController">
+                <viewController id="Ghv-Kg-zhj" customClass="JobViewController" customModule="LogInDemo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4O-nb-s8t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,6 +177,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Job" image="hammer.circle" catalog="system" selectedImage="hammer.circle.fill" id="uga-Ve-STq"/>
+                    <connections>
+                        <outlet property="jobInfoLabel" destination="dhp-74-IHB" id="ySY-vR-LHs"/>
+                        <outlet property="jobNameLabel" destination="j7N-uS-YFY" id="DST-DM-2Dv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xB-CZ-y1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,7 +189,7 @@
         <!--Hobby-->
         <scene sceneID="O4I-sE-8j6">
             <objects>
-                <viewController id="sIQ-M2-sq3" sceneMemberID="viewController">
+                <viewController id="sIQ-M2-sq3" customClass="HobbyViewController" customModule="LogInDemo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9C-YJ-fE7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +226,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hobby" image="bicycle.circle" catalog="system" selectedImage="bicycle.circle.fill" id="OKG-5w-TqS"/>
+                    <connections>
+                        <outlet property="hobbyInfoLabel" destination="5Sd-ss-dC1" id="RE0-Zp-uIq"/>
+                        <outlet property="hobbyNameLabel" destination="gLz-HZ-XwN" id="H8z-3n-ZSq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbF-XQ-glT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
