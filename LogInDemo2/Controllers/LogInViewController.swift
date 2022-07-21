@@ -24,20 +24,16 @@ class LogInViewController: UIViewController {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         
-        print("view controllers")
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
-                print("welcomVC")
                 welcomeVC.person = user.person
             }
             
             if let jobVC = viewController as? JobViewController {
-                print("jobVC")
                 jobVC.job = user.person.job
             }
             
             if let hobbyVC = viewController as? HobbyViewController {
-                print("hobbyVC")
                 hobbyVC.hobby = user.person.hobby
             }
         }

@@ -30,13 +30,15 @@ struct Hobby {
 
 extension User {
     static func getUser() -> User {
-        User(name: "Alex",
-             password: "PassW",
-             person: Person(
+        User(
+            name: "Alex",
+            password: "PassW",
+            person: Person(
                 name: "Aleksey",
                 surname: "Suslov",
                 job: Job(name: "iOS Developer", info: "Designing and building applications for mobile devices running Apple's iOS operating software."),
                 hobby: Hobby(name: "Bicycling", info: "Cycling provides a variety of health benefits and reduces the risk of cancers, heart disease, and diabetes that are prevalent in sedentary lifestyles.")
-             ))
+            )
+        )
     }
 }
