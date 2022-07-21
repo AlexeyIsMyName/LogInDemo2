@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="90.401785714285708"/>
         </scene>
-        <!--Item-->
+        <!--Info-->
         <scene sceneID="3f2-fC-n8Q">
             <objects>
                 <viewController id="fGS-oh-Sdi" customClass="WelcomeViewController" customModule="LogInDemo2" customModuleProvider="target" sceneMemberID="viewController">
@@ -128,7 +127,7 @@
                             <constraint firstItem="PWK-T5-bTr" firstAttribute="top" secondItem="aDj-AR-EJ3" secondAttribute="bottom" constant="60" id="vnB-85-Eku"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="52s-tJ-IUL"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="52s-tJ-IUL"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="aDj-AR-EJ3" id="ydo-G4-Adg"/>
                     </connections>
@@ -138,33 +137,91 @@
             </objects>
             <point key="canvasLocation" x="1591" y="90"/>
         </scene>
-        <!--Item-->
+        <!--Job-->
         <scene sceneID="RXy-Zq-R4G">
             <objects>
                 <viewController id="Ghv-Kg-zhj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4O-nb-s8t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7N-uS-YFY">
+                                <rect key="frame" x="182.5" y="144" width="49" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fek-f2-j2a">
+                                <rect key="frame" x="164" y="240" width="86" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhp-74-IHB">
+                                <rect key="frame" x="16" y="436" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2rI-OR-ay4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.97254901960784312" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j7N-uS-YFY" firstAttribute="top" secondItem="2rI-OR-ay4" secondAttribute="top" constant="100" id="3sv-0O-aY6"/>
+                            <constraint firstItem="dhp-74-IHB" firstAttribute="leading" secondItem="2rI-OR-ay4" secondAttribute="leading" constant="16" id="Rlq-ay-sML"/>
+                            <constraint firstItem="Fek-f2-j2a" firstAttribute="centerX" secondItem="c4O-nb-s8t" secondAttribute="centerX" id="VEY-Z5-wds"/>
+                            <constraint firstItem="dhp-74-IHB" firstAttribute="top" secondItem="Fek-f2-j2a" secondAttribute="bottom" constant="100" id="Y4t-s9-5gb"/>
+                            <constraint firstItem="Fek-f2-j2a" firstAttribute="top" secondItem="j7N-uS-YFY" secondAttribute="bottom" constant="60" id="jbB-8C-Sdr"/>
+                            <constraint firstItem="2rI-OR-ay4" firstAttribute="trailing" secondItem="dhp-74-IHB" secondAttribute="trailing" constant="16" id="nYD-hr-lAx"/>
+                            <constraint firstItem="j7N-uS-YFY" firstAttribute="centerX" secondItem="c4O-nb-s8t" secondAttribute="centerX" id="rki-gn-zYJ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="hammer.circle" catalog="system" selectedImage="hammer.circle.fill" id="uga-Ve-STq"/>
+                    <tabBarItem key="tabBarItem" title="Job" image="hammer.circle" catalog="system" selectedImage="hammer.circle.fill" id="uga-Ve-STq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xB-CZ-y1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2349" y="90"/>
         </scene>
-        <!--Item-->
+        <!--Hobby-->
         <scene sceneID="O4I-sE-8j6">
             <objects>
                 <viewController id="sIQ-M2-sq3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9C-YJ-fE7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLz-HZ-XwN">
+                                <rect key="frame" x="164" y="144" width="86.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLl-9S-JX9">
+                                <rect key="frame" x="164" y="240" width="86" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobby" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sd-ss-dC1">
+                                <rect key="frame" x="16" y="436" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Zsb-Gp-e7S"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.97254901960784312" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zsb-Gp-e7S" firstAttribute="trailing" secondItem="5Sd-ss-dC1" secondAttribute="trailing" constant="16" id="31B-km-5WF"/>
+                            <constraint firstItem="OLl-9S-JX9" firstAttribute="top" secondItem="gLz-HZ-XwN" secondAttribute="bottom" constant="60" id="ATX-r2-xyA"/>
+                            <constraint firstItem="gLz-HZ-XwN" firstAttribute="centerX" secondItem="d9C-YJ-fE7" secondAttribute="centerX" id="Hu9-an-yhX"/>
+                            <constraint firstItem="OLl-9S-JX9" firstAttribute="centerX" secondItem="d9C-YJ-fE7" secondAttribute="centerX" id="JQ9-8Z-TtS"/>
+                            <constraint firstItem="gLz-HZ-XwN" firstAttribute="top" secondItem="Zsb-Gp-e7S" secondAttribute="top" constant="100" id="SFu-xC-7Kd"/>
+                            <constraint firstItem="5Sd-ss-dC1" firstAttribute="top" secondItem="OLl-9S-JX9" secondAttribute="bottom" constant="100" id="b0A-Kv-jG2"/>
+                            <constraint firstItem="5Sd-ss-dC1" firstAttribute="leading" secondItem="Zsb-Gp-e7S" secondAttribute="leading" constant="16" id="pSb-gF-Q3O"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="bicycle.circle" catalog="system" selectedImage="bicycle.circle.fill" id="OKG-5w-TqS"/>
+                    <tabBarItem key="tabBarItem" title="Hobby" image="bicycle.circle" catalog="system" selectedImage="bicycle.circle.fill" id="OKG-5w-TqS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbF-XQ-glT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,8 +254,5 @@
         <image name="hammer.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
