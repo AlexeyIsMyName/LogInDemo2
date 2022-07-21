@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -127,7 +128,7 @@
                             <constraint firstItem="PWK-T5-bTr" firstAttribute="top" secondItem="aDj-AR-EJ3" secondAttribute="bottom" constant="60" id="vnB-85-Eku"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="52s-tJ-IUL"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="52s-tJ-IUL"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="aDj-AR-EJ3" id="ydo-G4-Adg"/>
                     </connections>
@@ -136,6 +137,38 @@
                 <exit id="dJp-zw-1iT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1591" y="90"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="RXy-Zq-R4G">
+            <objects>
+                <viewController id="Ghv-Kg-zhj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4O-nb-s8t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2rI-OR-ay4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="hammer.circle" catalog="system" selectedImage="hammer.circle.fill" id="uga-Ve-STq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xB-CZ-y1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349" y="90"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="O4I-sE-8j6">
+            <objects>
+                <viewController id="sIQ-M2-sq3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d9C-YJ-fE7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zsb-Gp-e7S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="bicycle.circle" catalog="system" selectedImage="bicycle.circle.fill" id="OKG-5w-TqS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbF-XQ-glT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077" y="90"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TNw-ll-FhZ">
@@ -148,11 +181,24 @@
                     </tabBar>
                     <connections>
                         <segue destination="fGS-oh-Sdi" kind="relationship" relationship="viewControllers" id="9dr-Lj-13d"/>
+                        <segue destination="Ghv-Kg-zhj" kind="relationship" relationship="viewControllers" id="hkm-B8-e4Q"/>
+                        <segue destination="sIQ-M2-sq3" kind="relationship" relationship="viewControllers" id="xNm-VP-3bj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6R6-Q7-vrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="90"/>
+            <point key="canvasLocation" x="857" y="90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bicycle.circle" catalog="system" width="128" height="121"/>
+        <image name="bicycle.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="hammer.circle" catalog="system" width="128" height="121"/>
+        <image name="hammer.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
