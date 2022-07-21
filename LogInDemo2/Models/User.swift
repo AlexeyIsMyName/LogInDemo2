@@ -16,6 +16,10 @@ struct Person {
     let surname: String
     let job: Job
     let hobby: Hobby
+    
+    var fullName: String {
+        return "\(name) \(surname)"
+    }
 }
 
 struct Job {
